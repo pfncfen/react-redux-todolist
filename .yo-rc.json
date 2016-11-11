@@ -1,0 +1,7 @@
+{
+  "generator-react-webpack": {
+    "appName": "todolistReduxUndo",
+    "style": "scss",
+    "postcss": true
+  }
+}
