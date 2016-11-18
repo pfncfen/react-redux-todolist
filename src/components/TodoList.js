@@ -1,17 +1,21 @@
 import React, { PropTypes } from 'react'
 import Todo from './Todo'
 
+require('./TodoList.scss')
+
 const TodoList = ({ todos, onTodoClick , onTodoModify}) => (
-  <ul>
-    {todos.map(todo =>
-      <Todo
-        key={todo.id}
-        {...todo}
-        onClick={() => onTodoClick(todo.id)}
-        onModifyConfirm={(text) => onTodoModify(todo.id, text)}
-      />
-    )}
-  </ul>
+  <div className="todo-items-wrapper">
+    <ul>
+      {todos.map(todo =>
+        <Todo
+          key={todo.id}
+          {...todo}
+          onClick={() => onTodoClick(todo.id)}
+          onModifyConfirm={(text) => onTodoModify(todo.id, text)}
+        />
+      )}
+    </ul>
+  </div>
 )
 
 TodoList.propTypes = {

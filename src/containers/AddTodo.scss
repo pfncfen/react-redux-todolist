@@ -1,0 +1,71 @@
+@import "../styles/helpers";
+
+.add-to-do{
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+
+  .add-to-do-button {
+    position: relative;
+    border: 0;
+    font-size: 24px;
+    line-height: 40px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    color: $color-four;
+    background: white;
+    border-radius: 0 20px 20px 0;
+    overflow: hidden;
+    display: inline-block;
+
+    &:hover{
+      color: white;
+      background: $color-four;
+    }
+
+    button {
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      border: 0;
+      height: 40px;
+      width: 100px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      cursor: pointer;
+      outline: 0;
+    }
+
+  }
+
+  .add-to-do-input{
+    display: inline-block;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    input{
+      font-size: 24px;
+      font-family: Short Stack, "微软雅黑" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+      position: relative;
+      -webkit-appearance: none;
+      height: 40px;
+      width: 350px;
+      padding-left:20px;
+      box-shadow: none;
+      outline:none;
+      border-radius: 20px 0 0 20px;
+      border: 0;
+      //background-color: $color-three;
+    }
+  }
+
+
+
+
+}

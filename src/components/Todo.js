@@ -1,5 +1,7 @@
 import React, { PropTypes } from 'react'
 
+require('./Todo.scss')
+
 class Todo extends React.Component{
 
   constructor (props, context) {
@@ -23,10 +25,15 @@ class Todo extends React.Component{
     }}
           >
             {this.props.text}
+            <div className="a-button">
+              Modify
+              <button onClick={()=>this.changeToModify()}></button>
+              </div>
           </li>
+
         }
 
-        <button onClick={()=>this.changeToModify()}>Modify</button>
+
       </div>
     );
   }

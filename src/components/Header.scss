@@ -1,0 +1,12 @@
+@import "../styles/helpers";
+
+.topHeader{
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  letter-spacing: 1px;
+  span{
+    text-shadow: 3px 3px $color-one;
+  }
+}

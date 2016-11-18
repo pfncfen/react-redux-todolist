@@ -2,6 +2,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo } from '../actions'
 
+require('./AddTodo.scss')
+
 let AddTodo = ({ dispatch }) => {
   let input
 
@@ -15,12 +17,17 @@ let AddTodo = ({ dispatch }) => {
         dispatch(addTodo(input.value))
         input.value = ''
       }}>
+        <div className="add-to-do-input">
         <input ref={node => {
           input = node
-        }} />
-        <button type="submit">
-          Add Todo
-        </button>
+        }}/>
+          </div>
+        <div className="add-to-do-button">
+          Add
+          <button type="submit">
+
+          </button>
+        </div>
       </form>
     </div>
   )

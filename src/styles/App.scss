@@ -1,4 +1,31 @@
 /* Base Application Styles */
-#app{
+@import './helpers.scss';
+@import './_reset.scss';
 
+@font-face {
+  font-family: Short Stack;
+  src: url('../fonts/ShortStack-Regular.ttf');
+}
+
+
+html {
+  overflow: hidden;
+  @include simple-gradient( 0 , $color-one,$color-two  );
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Short Stack, "微软雅黑" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.app-wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
 }
