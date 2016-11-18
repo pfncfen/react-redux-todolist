@@ -5,7 +5,6 @@ require('./TodoList.scss')
 
 const TodoList = ({ todos, onTodoClick , onTodoModify}) => (
   <div className="todo-items-wrapper">
-    <ul>
       {todos.map(todo =>
         <Todo
           key={todo.id}
@@ -14,7 +13,6 @@ const TodoList = ({ todos, onTodoClick , onTodoModify}) => (
           onModifyConfirm={(text) => onTodoModify(todo.id, text)}
         />
       )}
-    </ul>
   </div>
 )
 

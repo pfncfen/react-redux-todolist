@@ -1,17 +1,37 @@
 @import "../styles/helpers";
 
 .todo-item {
-  li.to-do {
+
+  input.to-do-input{
+    -webkit-appearance: none;
+    font-size: 24px;
+    font-family: Short Stack, "微软雅黑" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+    height: 40px;
+    width: 450px;
+    padding-left:20px;
+    box-shadow: none;
+    outline:none;
+    border-radius: 20px;
+    border: 0;
+    margin-bottom: 23px;
+  }
+  .to-do {
     font-size: 30px;
+    color: white;
 
-    margin: 20px 0;
+    &.completed {
+      color: $color-four;
+    }
 
-    span{
+    span {
       position: relative;
       display: inline-block;
       line-height: 40px;
       overflow: hidden;
       height: 40px;
+      margin-bottom: 10px;
+
     }
 
     .a-button {
@@ -29,6 +49,7 @@
       border-radius: 20px;
       overflow: hidden;
       display: inline-block;
+      margin-bottom: 10px;
 
       &:hover {
         color: white;

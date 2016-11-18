@@ -18,18 +18,15 @@ class Todo extends React.Component{
         { this.state.modify?
           <input className="to-do-input" value={this.state.text} onChange={(e)=>this.handleInputChange(e)} onKeyDown={(e)=>this.handleKeyDown(e)}></input>
           :
-          <li className="to-do"
+          <div className={'to-do' + (this.props.completed ? ' completed' : '')}
               onClick={this.props.onClick}
-              style={{
-      textDecoration: this.props.completed ? 'line-through' : 'none'
-    }}
           >
             {this.props.text}
             <div className="a-button">
               Modify
               <button onClick={()=>this.changeToModify()}></button>
               </div>
-          </li>
+          </div>
 
         }
 

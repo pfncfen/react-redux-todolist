@@ -1,0 +1,26 @@
+@import '../styles/helpers';
+
+.footer-wrapper{
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+
+  .filter-link{
+    display: inline-block;
+    margin: 0 20px;
+    padding: 0 20px;
+    border-radius: 20px;
+    color: $color-four;
+
+    &.active{
+    }
+
+    &.notactive{
+      color: $color-four;
+      background: white;
+    }
+    &.notactive:hover{
+      background: none;
+    }
+  }
+}
