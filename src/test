@@ -1,0 +1,13 @@
+var function map( array, fun )
+{
+	if( array === []) return [];
+
+	var newarray = [];
+
+	for(var i = 0;i<array.length; i++)
+	{
+		newarray.push(fun(array[i],i,array));
+	}
+
+	return newarray;
+}
